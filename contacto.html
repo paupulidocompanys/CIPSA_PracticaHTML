@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8"> 
+	<meta name="author" content="Pau Pulido"> <meta name="keywords" content=""> <meta name="description" content="Periódico digital de noticias de actualidad"> <title>International news: contacto</title>
+<style type="text/css">
+	body{font-family:arial,sans-serif;font-size:16px;}
+	h2,h3,h4,h5,h6,p{font-family:serif;}
+	th,td{border:2px solid gray;}
+</style>
+<link rel="icon" type="image/png" sizes="64x64" href="logonoticias.png">
+</head> 
+<body>
+	<nav>
+		<ul>
+			<li><a href="seccion1.html">Actualidad sobre el Coronavirus</a></li>
+			<li><a href="seccion2.html">Internacional: Europa</a></li>
+			<li><a href="seccion3.html">Internacional: América del Norte</a></li>
+			<li><a href="seccion4.html">Internacional: Oriente medio</a></li>
+			<li><a href="contacto.html">Contacto: Suscríbete a nuestro Newsletter</a></li>
+		</ul>
+	</nav>
+<header>
+	<a href="index.html"><img src="logonoticias.png" alt="logo noticias"><br>Volver al menú principal</a>
+	<h1>Formulario de contacto</h1>
+</header>
+<section>
+	<h2>Si desea recibir nuestro Newsletter con las noticias de actualidad más destacadas, por favor, rellene el formulario de contacto que encontrará a continuación y seleccione el botón "Deseo suscribirme el boletín de novedades":</h2>
+	
+<form action="/php/contacto.php" method="POST"> 
+	<fieldset>
+		<legend>Datos de suscripción</legend>
+		<label for="Nombre">Nombre</label><br>
+		<input type="text" name="Usuario" maxlength="30" id="Nombre"> <br>
+		<label for="Apellidos">Apellidos</label><br>
+		<input type="text" name="ApellUsu" maxlength="80" id="Apellidos"> <br>
+		<label for="Correo">Correo electrónico</label><br>
+		<input type="email" name="Correo" maxlength="20" id="Correo"> <br>
+		<label for="Hom">Sexo</label><br>
+		<input type="radio" name="Sexo" value="Hombre" id="Hom" checked> <label for="Hom">Hombre</label><br> 
+		<input type="radio" name="Sexo" value="Mujer" id="Muj"><label for="Muj">Mujer</label><br>
+		<input type="checkbox" name="check" value="aceptado" id="suscripcion" 
+		checked><label for="suscripcion">Deseo suscribirme al boletín de novedades</label><br>
+		<input type="submit" name="enviar" value="guardar cambios">
+		<input type="reset" name="borrar" value="Borrar los datos introducidos">
+	</fieldset>
+</form>
+
+</section>
+<footer>
+<p><em>&copy; Pau Pulido, &nbsp; <time datetime="2020-02-12">12 de Febrero de 2020</time></em></p>	
+</footer>
+</body>
+</html>
